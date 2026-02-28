@@ -1,4 +1,4 @@
-import { Board, GameState, Move, Position, PieceColor } from './types';
+import { Board, Move, Position, PieceColor } from './types';
 import { copyBoard, getPiece, setPiece, isValidPosition, isPlayableSquare } from './board';
 
 export function getValidMoves(board: Board, position: Position, playerColor: PieceColor): Move[] {

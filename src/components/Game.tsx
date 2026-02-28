@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Board as BoardComponent } from './Board';
 import { Controls } from './Controls';
-import { GameState, Position, AIConfig, Move } from '../game/types';
+import { GameState, Position, AIConfig } from '../game/types';
 import { createInitialBoard } from '../game/board';
 import { getValidMoves, applyMove, getGameStatus } from '../game/gameLogic';
 import { getBestMove } from '../game/ai';

@@ -1,5 +1,5 @@
-import { Board, Move, PieceColor, Position } from './types';
-import { copyBoard, getPiece, isPlayableSquare } from './board';
+import { Board, Move, PieceColor } from './types';
+import { getPiece, isPlayableSquare } from './board';
 import { getValidMoves, applyMove, countPieces } from './gameLogic';
 
 export function getBestMove(board: Board, color: PieceColor, difficulty: 'easy' | 'medium'): Move | null {

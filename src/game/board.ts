@@ -1,4 +1,4 @@
-import { Board, Piece, PieceColor, Square } from './types';
+import { Board, Piece, Square } from './types';
 
 export function createInitialBoard(): Board {
   const squares: (Square | null)[][] = Array(8)
