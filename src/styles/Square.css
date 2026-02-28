@@ -1,13 +1,22 @@
 .square {
   cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .piece {
   transition: transform 0.1s ease;
+  width: 90% !important;
+  height: 90% !important;
 }
 
 .piece:hover {
   transform: scale(1.05);
+}
+
+.piece:active {
+  transform: scale(0.95);
 }
 
 .piece-red {
@@ -16,4 +25,11 @@
 
 .piece-black {
   background-color: #444444 !important;
+}
+
+@media (max-width: 640px) {
+  .piece {
+    width: 85% !important;
+    height: 85% !important;
+  }
 }
